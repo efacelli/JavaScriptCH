@@ -1,72 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Leparc</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
-    <h1 class="titulo">nacho puto</h1>
-    <nav>
-        <img src="" alt="">
-        <ul>
-            <li>geagee</li>
-            <li>geagee</li>
-            <li>geagee</li>
-            <li>geagee</li>
-        </ul>
 
-
-    </nav>
-
-    <main>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nemo blanditiis sint alias eius magni
-        recusandae nulla nam, vitae nostrum explicabo facilis vero officiis animi tempora, enim perspiciatis
-        exercitationem cupiditate obcaecati consectetur similique quod tempore. Debitis repudiandae cum dolorum magnam
-        incidunt quos soluta modi explicabo ex suscipit maxime optio ratione officiis possimus repellat similique
-        quibusdam quasi, totam voluptatem provident! Eligendi, natus? Deserunt reprehenderit, tempora impedit numquam
-        vitae delectus quisquam hic iste necessitatibus rem! Laborum praesentium eaque voluptatibus ex fugiat nam
-        placeat, distinctio porro ratione officia odio nemo, nobis culpa illum repudiandae harum nihil doloremque magnam
-        dolores? Eos iusto quasi accusantium exercitationem! Consectetur cupiditate, nostrum est dolorum molestiae rerum
-        distinctio laboriosam aperiam minima id sequi omnis sapiente nesciunt maxime praesentium itaque! Dolorem
-        cupiditate autem odit quasi ipsa, minima sed? Accusantium numquam dolore repellat fugiat sit ut repudiandae
-        asperiores, velit accusamus sint ipsam, reprehenderit fuga enim maxime beatae? Fugit ea quod possimus obcaecati
-        vel odit voluptate quasi laudantium voluptates porro. Error tempore consequatur reprehenderit eveniet, iure nam
-        laborum ipsam recusandae odit perferendis quo quibusdam cupiditate harum repellendus accusamus nihil repellat
-        adipisci pariatur labore vero quae molestiae expedita, eos commodi. Quisquam repudiandae facilis, in consequatur
-        enim delectus, pariatur maxime quis nihil rem magnam fugit a exercitationem maiores architecto voluptatem modi!
-        Ipsum, pariatur! Reiciendis praesentium doloribus, veniam aliquid maxime dolor laboriosam saepe provident quasi
-        nam itaque amet ad sapiente nulla sequi omnis ut nostrum reprehenderit delectus illum molestias eum odio.
-        Delectus iure eligendi neque vel nemo unde debitis cupiditate ad quia laboriosam corrupti magni sed mollitia
-        nobis voluptatem expedita, reiciendis excepturi ut minima inventore quo error corporis saepe. Sint iure magnam
-        ad minima architecto pariatur! Facilis quaerat corrupti nesciunt fuga iste vitae, a tenetur veniam ut
-        voluptatibus, illo dignissimos excepturi distinctio id et beatae reprehenderit sed laborum nemo sapiente
-        pariatur eos? Distinctio, exercitationem quia.</main>
-
-    <footer>
-        <div class="primera">
-            <img src="" alt="">
-        </div>
-        <div class="segunda">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt earum necessitatibus ad commodi
-                doloremque. Voluptatum laboriosam, aperiam recusandae assumenda modi, quas odit veniam libero mollitia
-                explicabo dolore itaque, inventore quae.</p>
-        </div>
-        <div class="tercera">
-            <ul>
-                <li>afas</li>
-                <li>sgd</li>
-                <li>sgd</li>
-                <li>sgd</li>
-                <li>gsd</li>
-
-            </ul>
-        </div>
-    </footer>
-    <script src="/productos.js"></script>
-    <script src="/main.js"></script>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Leparc</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Leparc</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
+                    </li>
+                    <li>
+                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>
+                    </li>
+                    <li>
+                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pantalones</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <div class="producto">
+                    <img src="/img/galaxy_a34.avif" alt="" class="producto_imagen">
+                    <div class="producto_detalles">
+                        <h3 class="producto_titulo">Abrigo 01</h3>
+                        <p class="producto_precio">$1000</p>
+                        <button class="producto_agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="/img/galaxy_a34.avif" alt="" class="producto_imagen">
+                    <div class="producto_detalles">
+                        <h3 class="producto_titulo">Abrigo 02</h3>
+                        <p class="producto_precio">$1000</p>
+                        <button class="producto_agregar">Agregar</button>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./main.js"></script>
+    <script src="./menu.js"></script>
 </body>
-
 </html>

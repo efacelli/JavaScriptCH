@@ -1,58 +1,182 @@
-const productos = [
-	{
-		id: "1",
-		nombre: "Moto E32",
-		marca: "Motorola",
-		precio: 50,
-		descripcion: "El Motorola Moto E32 es un smartphone Android con una pantalla HD",
-	},
-	{
-		id: "2",
-		nombre: "Moto G22",
-		marca: "Motorola",
-		precio: 70,
-		descripcion: "Potenciado por un procesador MediaTek Helio",
-	},
-	{
-		id: "3",
-		nombre: "Moto G42",
-		marca: "Motorola",
-		precio: 75,
-		descripcion: "Smartphone Android. Potenciado por un procesador MediaTek Helio",
-	},
-	{
-		id: "4",
-		nombre: "Galaxy A34",
-		marca: "Samsung",
-		precio: 80,
-		descripcion: "Es el sucesor del Galaxy A33 5G. Con una pantalla Super AMOLED de 6.6 pulgadas",
-	},
-	{
-		id: "5",
-		nombre: "Galaxy M54",
-		marca: "Samsung",
-		precio: 80,
-		descripcion: "Se suma a la serie Galaxy M con una pantalla Super AMOLED",
-	},
-	{
-		id: "6",
-		nombre: "Galaxy S10e",
-		marca: "Samsung",
-		precio: 85,
-		descripcion: "Pantalla Full HD",
-	},
-	{
-		id: "7",
-		nombre: "Galaxy Tab S6 Lite",
-		marca: "Samsung",
-		precio: 90,
-		descripcion: "Pantalla Full HD",
-	},
-	{
-		id: "8",
-		nombre: "30 SE",
-		marca: "TCL",
-		precio: 95,
-		descripcion: "Buen celular",
-	},
-];
+[
+    {
+        "id": "abrigo-01",
+        "titulo": "Abrigo 01",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "Abrigo 02",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-03",
+        "titulo": "Abrigo 03",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-04",
+        "titulo": "Abrigo 04",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "abrigo-05",
+        "titulo": "Abrigo 05",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-01",
+        "titulo": "Camiseta 01",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-02",
+        "titulo": "Camiseta 02",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-03",
+        "titulo": "Camiseta 03",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-04",
+        "titulo": "Camiseta 04",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-05",
+        "titulo": "Camiseta 05",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-06",
+        "titulo": "Camiseta 06",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-07",
+        "titulo": "Camiseta 07",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "camiseta-08",
+        "titulo": "Camiseta 08",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camisetas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Pantalón 01",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "Pantalón 02",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "Pantalón 03",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Pantalón 04",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-05",
+        "titulo": "Pantalón 05",
+        "imagen": "/img/galaxy_a34.avif",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    }
+]
